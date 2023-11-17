@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function buttonclick(){
+	var btn = document.getElementById("myButton");
+	//console.log("btn",btn);
+	
+	if(btn.innerHTML == 'ว่าง'){
+		btn.innerHTML = "ไม่ว่าง"
+		btn.style.backgroundColor = "red";
+	}else {
+		btn.innerHTML = "ว่าง"
+		btn.style.backgroundColor = "#44c767";
+	}
+
+}
+</script>
+
+
+<style>
+.myButton {
+	background-color:#44c767;
+	border-radius:50px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+	padding:25px 50px;
+	text-decoration:none;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+
+<div style="text-align:center; padding:50px">
+    <button id="myButton" class="myButton" onclick="buttonclick()">ว่าง</button>
+</div>    
+</body>
+</html>
